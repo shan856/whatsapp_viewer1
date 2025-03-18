@@ -1,0 +1,227 @@
+/* General Styling */
+.chat-viewer {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  max-width: 90vw;
+  max-height: 100vh;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Progress text */
+.progress-text {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-percentage {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #1e1e1e;
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 transparent;
+}
+
+/* Scrollbar Customization */
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 3px;
+}
+
+/* Messages */
+.message {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 1.5;
+  transition: background-color 0.5s;
+  position: relative;
+}
+
+/* Sender Name */
+.sender-name {
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Sent Messages */
+.sent {
+  background: #056162;
+  color: #fff;
+  align-self: flex-end;
+  text-align: right;
+  border-bottom-right-radius: 0;
+}
+
+/* Received Messages */
+.received {
+  background: #262d31;
+  color: #e0e0e0;
+  align-self: flex-start;
+  text-align: left;
+  border-bottom-left-radius: 0;
+}
+
+/* Highlight effect for searched messages */
+.highlighted {
+  background-color: #4caf50 !important;
+  color: white;
+  transition: background-color 0.5s ease;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Media Files */
+.media {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: block;
+}
+
+.video,
+.audio {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.file {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.file:hover {
+  text-decoration: underline;
+}
+
+/* Date & Time Search */
+.date-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.date-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #e0e0e0;
+  font-size: 16px;
+  outline: none;
+}
+
+.date-input:focus {
+  border: 1px solid #4caf50;
+}
+
+/* Button Styling */
+button {
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Clear Chat Button */
+.clear-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.clear-btn:hover {
+  background: #d32f2f;
+}
+
+
+/* Previous Button */
+.prev-button {
+  padding: 10px;
+  background: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.prev-button:hover {
+  background: #ff8c00;
+}
+
+/* Next Button */
+.next-button {
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.next-button:hover {
+  background: #45a049;
+}
